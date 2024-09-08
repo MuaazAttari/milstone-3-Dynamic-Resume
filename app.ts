@@ -1,12 +1,13 @@
 
-// listing elements
+// listing elements....
+
 document.getElementById("resume-form")?.addEventListener("submit", function(event) {
 
     event.preventDefault();
 
 
 
-    // type assertion
+    // type assertion...
 
     const profilePictureInput = document.getElementById("profilePicture") as HTMLInputElement;
 
@@ -27,7 +28,7 @@ document.getElementById("resume-form")?.addEventListener("submit", function(even
     const skillsElement = document.getElementById("skills") as HTMLInputElement;
 
 
-
+// if statement.....
     
     if( profilePictureInput && nameElement && emailElement && phoneElement && addressElement
         && instituteElement && degreeElement && completionElement
@@ -66,18 +67,18 @@ document.getElementById("resume-form")?.addEventListener("submit", function(even
             <p><strong>Address:</strong> ${address} </p>
             
             <h3>Education</h3>
-            <p>Institute: ${institute} </p>
-            <p>Degree: ${degree} </p>
-            <p>Completion: ${completion} </p>
+            <p><strong>Institute:</strong> ${institute} </p>
+            <p><strong>Degree: </strong>${degree} </p>
+            <p><strong>Completion:</strong> ${completion} </p>
             
             <h3>Experience</h3>
-            <p>Job-Title: ${jobTitle} </p>
-            <p>Company: ${company} </p>
-            <p>WorkDates: ${workDates} </p>
-            <p>Job-Description: ${jobDescription} </p>
+            <p><strong>Job-Title:</strong> ${jobTitle} </p>
+            <p><strong>Company:</strong> ${company} </p>
+            <p><strong>WorkDates: </strong>${workDates} </p>
+            <p><strong>Job-Description:</strong> ${jobDescription} </p>
             
             <h3> Skills</h3>
-            <p>Skills: ${skills} </p>
+            <p><strong>Skills: ${skills} </strong></p>
             
             ` ;
 
